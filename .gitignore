@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+<<<<<<< HEAD
+=======
+# Folders
+target/
+
+>>>>>>> bedf028b77e0f31f405f67e9c8520dcd65572aac
 # Log file
 *.log
 

@@ -1,0 +1,4 @@
+localhost ansible_user=pratap
+
+[root]
+192.168.0.107 ansible_user=root

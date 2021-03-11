@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of CalculatorSPEDevOps
+  hosts: all
+  tasks:
+    - name: Pull CalculatorSPEDevOps docker image
+      docker_image:
+        name: pratapchandra007/calculatordevops
+        source: pull
