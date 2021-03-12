@@ -26,7 +26,7 @@ public class Main {
 	 */
 	public static void main(String[] args) throws CalculatorDevOpsException {
 		// TODO Auto-generated method stub
-		logger.info("Welcome to Calculator DevOps SPE Mini Project");
+//		logger.info("Welcome to Calculator DevOps SPE Mini Project");
 		System.out.println("****************************************************");
 		System.out.println("Calculator");
 		System.out.println("****************************************************");
@@ -43,28 +43,28 @@ public class Main {
 				case 1: {
 					System.out.println("Enter the number for doing Square Root : ");
 					Double num = Double.parseDouble(br.readLine());
-					logger.info("Number entered for performing Square root :: {}", num);
+					logger.info("Number entered for performing Square root :: [{}]", num);
 					Double ans = CalculatorUtils.squareRoot(num);
 					System.out.println("The Square Root of " + num + " is : " + ans);
-					logger.info("Result of Square root is :: {}", ans);
+					logger.info("Result of Square root is :: [{}]", ans);
 					break;
 				}
 				case 2: {
 					System.out.println("Enter the number for performing Factorial : ");
 					Double num = Double.parseDouble(br.readLine());
-					logger.info("Number entered for performing Factorial :: {}", num);
+					logger.info("Number entered for performing Factorial :: [{}]", num);
 					Double ans = CalculatorUtils.factorial(num);
 					System.out.println("The Factorial of " + num + " is : " + ans);
-					logger.info("Result of Factorial is :: {}", ans);
+					logger.info("Result of Factorial is :: [{}]", ans);
 					break;
 				}
 				case 3: {
 					System.out.println("Enter the number for performing Natural log base e : ");
 					Double num = Double.parseDouble(br.readLine());
-					logger.info("Number entered for performing Natural log base e :: {}", num);
+					logger.info("Number entered for performing Natural log base e :: [{}]", num);
 					Double ans = CalculatorUtils.naturalLog(num);
 					System.out.println("The Natural Log of " + num + " is : " + ans);
-					logger.info("Result of Natural Log is :: {}", ans);
+					logger.info("Result of Natural Log is :: [{}]", ans);
 					break;
 				}
 				case 4: {
@@ -72,10 +72,10 @@ public class Main {
 					String[] arr = br.readLine().split("\\s+");
 					Double num1 = Double.parseDouble(arr[0]);
 					Double num2 = Double.parseDouble(arr[1]);
-					logger.info("Numbers entered for performing Power Function :: {}, {}", num1, num2);
+					logger.info("Numbers entered for performing Power Function :: [{}], [{}]", num1, num2);
 					Double ans = CalculatorUtils.power(num1, num2);
 					System.out.println("The Power of " + num1 + " to the power " + num2 + " is : " + ans);
-					logger.info("Result of performing Power Function :: {}, {}", ans);
+					logger.info("Result of performing Power Function :: [{}]", ans);
 					break;
 				}
 				case 5: {
@@ -88,7 +88,7 @@ public class Main {
 				}
 				}
 			} catch (Exception e) {
-				logger.error("Error occurred :: {}", e.getMessage());
+				logger.error("Error occurred :: [{}]", e.getMessage());
 			}
 		}
 	}
