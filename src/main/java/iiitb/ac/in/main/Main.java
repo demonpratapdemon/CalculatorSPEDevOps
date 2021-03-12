@@ -79,11 +79,11 @@ public class Main {
 					break;
 				}
 				case 5: {
-					logger.info("Exiting the Calculator Application");
+//					logger.info("Exiting the Calculator Application");
 					System.exit(0);
 				}
 				default: {
-					logger.info("Exiting the Calculator Application");
+//					logger.info("Exiting the Calculator Application");
 					System.exit(0);
 				}
 				}
